@@ -18,7 +18,6 @@ display: flex; => Permite pasar elementos de vertical a horizontal
 justify-content: space-between; => Agrega un espacio entree 2 objetos deacuerdo al contenido
 align-items: center; => Alinea los objetos en el centro
 */
-
 nav{
   display: flex;
   background-color: #7ACC2D;
@@ -51,4 +50,34 @@ nav li a{
 
 nav li a:hover{
   color: white;
+}
+
+/* ------------------------ Main section */
+
+.main_section{
+  padding: 15%;
+  text-align: center;
+}
+
+/*
+background-size: cover; => Hace el la imagen de fondo ocupe el tamaño del contenedor donde esta ubicada
+background-position: center top; => Alinea el fondo en el centro y hacia arriba
+adding: 15%; => Al incluir un padding porcentual el contenido se ajusta al tamaño del contenedor
+ */
+.products{
+  background-image: url("../images/curve.png");
+  height: 200px;
+  background-size: cover;
+  background-position: center top;
+  padding: 15%;
+  display: flex;
+}
+
+.product{
+  padding: 10px;
+}
+
+.product .content{
+  background-color: white;
+  padding: 20px;
 }
