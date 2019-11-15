@@ -6,11 +6,26 @@
 #  \___/____/____/··
 #  ·················
 */
+@import url('https://fonts.googleapis.com/css?family=Open+Sans:400,700');
+/* -------------Variables */
+:root{
+--green-color:#7ACC2D;
+--white-color:white;
+--black-color:#313337;
+/* Tipografía */
+--normal:12px;
+/* Espaciado */
+--space:10px;
+/* Box shadow */
+--box:0px 0 2px 1px #e6e5e9;
+}
+/* -------------Variables */
+
 html,body{
   padding:0px;
   margin:0px;
-  font-size: 12px;
-  font-family: Helvetica;
+  font-size: var(--normal);
+  font-family: 'Open Sans', sans-serif;
 }
 
 /*
@@ -20,9 +35,9 @@ align-items: center; => Alinea los objetos en el centro
 */
 nav{
   display: flex;
-  background-color: #7ACC2D;
-  padding: 10px;
-  color: white;
+  background-color: var(--green-color);
+  padding: var(--space);
+  color: var(--white-color);
   justify-content: space-between;
   align-items: center;
 }
@@ -44,12 +59,12 @@ nav li{
 text-decoration: none; => Elimina la linea de los enlances
  */
 nav li a{
-  color: black;
+  color: var(--black-color);
   text-decoration: none;
 }
 
 nav li a:hover{
-  color: white;
+  color: var(--white-color);
 }
 
 /* ------------------------ Main section */
@@ -74,7 +89,7 @@ adding: 15%; => Al incluir un padding porcentual el contenido se ajusta al tama�
 }
 
 .product{
-  padding: 10px;
+  padding: var(--space);
   margin-top: -240px;
 }
 
@@ -82,9 +97,9 @@ adding: 15%; => Al incluir un padding porcentual el contenido se ajusta al tama�
 box-shadow: 0 0 1px #c1bcbc; => Genera la sombra al rededor de los elementos
 */
 .product .content{
-  background-color: white;
-  padding: 10px;
-  box-shadow: 0 0 1px #c1bcbc;
+  background-color: var(--white-color);
+  padding: var(--space);
+  box-shadow: var(--box);
 }
 
 .img_content{
@@ -92,11 +107,11 @@ box-shadow: 0 0 1px #c1bcbc; => Genera la sombra al rededor de los elementos
 }
 
 .main_button{
-  background-color: #7ACC2D;
+  background-color: var(--green-color);
   width: 100%;
-  padding: 10px;
-  font-size: 12px;
-  color: white;
+  padding: var(--space);
+  font-size: var(--normal);
+  color: var(--white-color);
   border:0;
   cursor: pointer;
   border-radius: 2px;
