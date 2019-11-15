@@ -1,24 +1,28 @@
 /*
-Aqui se dice al navegador que por debajo de los 600px active las reglas incluidas en @media
-*/
-@media (max-width: 600px) {
+#  ····················__····_·__···
+#  ···____·___··____··/·/_··(_)·/__·
+#  ··/·__·`__·\/·__·\/·__·\/·/·/·_·\
+#  ·/·/·/·/·/·/·/_/·/·/_/·/·/·/··__/
+#  /_/·/_/·/_/\____/_.___/_/_/\___/·
+#  ································· */
 
-  /*
-  display: inherit; => inherit es un valor permitido en todas las propiedades CSS. Hace que el elemento al cual se aplica tome el valor calculado de la propiedad de su elemento padre.
-  */
+@media (max-width: 650px) {
+
+  .main_section{
+    padding: 5%;
+  }
   .products{
-    display: inherit;
+    display: block;
     height: auto;
+    padding: 5%;
   }
   .product{
     margin-top: auto;
   }
-  .main_section{
-    padding: 4%;
+  .beneficios{
+    display: initial;
   }
-  .beneficios, .mentions{
-    display: inherit;
+  .mentions{
+    display: initial;
   }
-
-
 }
