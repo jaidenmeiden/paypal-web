@@ -66,18 +66,42 @@ adding: 15%; => Al incluir un padding porcentual el contenido se ajusta al tamaÃ
  */
 .products{
   background-image: url("../images/curve.png");
-  height: 200px;
+  max-height: 50px;
   background-size: cover;
   background-position: center top;
-  padding: 15%;
+  padding:20%;
   display: flex;
 }
 
 .product{
   padding: 10px;
+  margin-top: -240px;
 }
 
+/*
+box-shadow: 0 0 1px #c1bcbc; => Genera la sombra al rededor de los elementos
+*/
 .product .content{
   background-color: white;
-  padding: 20px;
+  padding: 10px;
+  box-shadow: 0 0 1px #c1bcbc;
+}
+
+.img_content{
+  text-align: center;
+}
+
+.main_button{
+  background-color: #7ACC2D;
+  width: 100%;
+  padding: 10px;
+  font-size: 12px;
+  color: white;
+  border:0;
+  cursor: pointer;
+  border-radius: 2px;
+}
+
+.main_button:hover{
+  background-color: #5e9e22;
 }
