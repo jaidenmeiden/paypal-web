@@ -1,5 +1,11 @@
+/*
+Aqui se dice al navegador que por debajo de los 600px active las reglas incluidas en @media
+*/
 @media (max-width: 600px) {
 
+  /*
+  display: inherit; => inherit es un valor permitido en todas las propiedades CSS. Hace que el elemento al cual se aplica tome el valor calculado de la propiedad de su elemento padre.
+  */
   .products{
     display: inherit;
     height: auto;
