@@ -13,6 +13,12 @@ html,body{
   font-family: Helvetica;
 }
 
+/*
+display: flex; => Permite pasar elementos de vertical a horizontal
+justify-content: space-between; => Agrega un espacio entree 2 objetos deacuerdo al contenido
+align-items: center; => Alinea los objetos en el centro
+*/
+
 nav{
   display: flex;
   background-color: #7ACC2D;
@@ -26,12 +32,18 @@ nav ul{
   display: flex;
 }
 
+/*
+list-style: none; => Elimina los puntos de las listas
+ */
 nav li{
   padding-left: 20px;
   list-style: none;
 
 }
 
+/*
+text-decoration: none; => Elimina la linea de los enlances
+ */
 nav li a{
   color: black;
   text-decoration: none;
