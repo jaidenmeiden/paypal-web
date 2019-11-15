@@ -60,7 +60,7 @@ nav a:hover{
   color: var(--white-color);
 }
 
-nav ul{
+nav ul {
   display: flex;
 }
 
